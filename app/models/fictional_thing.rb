@@ -1,0 +1,2 @@
+class FictionalThing < ApplicationRecord
+end

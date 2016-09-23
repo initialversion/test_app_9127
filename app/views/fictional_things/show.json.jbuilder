@@ -1,0 +1,1 @@
+json.partial! "fictional_things/fictional_thing", fictional_thing: @fictional_thing

@@ -1,0 +1,1 @@
+json.array! @fictional_things, partial: 'fictional_things/fictional_thing', as: :fictional_thing

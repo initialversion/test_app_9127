@@ -1,0 +1,22 @@
+<%= form_for(fictional_thing) do |f| %>
+  <% if fictional_thing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fictional_thing.errors.count, "error") %> prohibited this fictional_thing from being saved:</h2>
+
+      <ul>
+      <% fictional_thing.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
